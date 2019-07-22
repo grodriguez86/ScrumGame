@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ImageItemCell" customModule="scrum_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="209"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yrw-tC-maQ">
+                    <rect key="frame" x="10" y="10" width="258" height="189"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Yrw-tC-maQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="dou-lz-iNV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Yrw-tC-maQ" secondAttribute="bottom" constant="10" id="ijx-js-CNK"/>
+                <constraint firstItem="Yrw-tC-maQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="ltB-kI-znY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Yrw-tC-maQ" secondAttribute="trailing" constant="10" id="vIr-41-gzP"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageItemView" destination="Yrw-tC-maQ" id="sq3-E3-eRG"/>
+            </connections>
+            <point key="canvasLocation" x="16" y="-174.5"/>
+        </view>
+    </objects>
+</document>

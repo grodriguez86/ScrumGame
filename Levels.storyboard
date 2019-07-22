@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Levels View Controller-->
+        <scene sceneID="tit-yR-3gk">
+            <objects>
+                <viewController storyboardIdentifier="LevelsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Thj-ma-1Cm" customClass="LevelsViewController" customModule="scrum_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BOL-Gt-OlC"/>
+                        <viewControllerLayoutGuide type="bottom" id="1xF-QA-dbh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EF5-ar-pIY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vvx-cO-3Br">
+                                <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J99-vp-dB3">
+                                        <rect key="frame" x="333" y="14" width="22" height="22"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="logout:" destination="Thj-ma-1Cm" eventType="touchUpInside" id="yq0-4s-7bT"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minilogo" translatesAutoresizingMaskIntoConstraints="NO" id="tP3-nq-2jQ">
+                                        <rect key="frame" x="-463.5" y="5" width="1302" height="40"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="tP3-nq-2jQ" firstAttribute="centerY" secondItem="Vvx-cO-3Br" secondAttribute="centerY" id="8I2-fk-J36"/>
+                                    <constraint firstItem="tP3-nq-2jQ" firstAttribute="centerX" secondItem="Vvx-cO-3Br" secondAttribute="centerX" id="CqK-Kl-YBG"/>
+                                    <constraint firstAttribute="height" constant="50" id="IfG-xG-F3N"/>
+                                    <constraint firstAttribute="bottom" secondItem="tP3-nq-2jQ" secondAttribute="bottom" constant="5" id="J4G-gD-J37"/>
+                                    <constraint firstAttribute="trailing" secondItem="J99-vp-dB3" secondAttribute="trailing" constant="20" id="NA5-nP-lmz"/>
+                                    <constraint firstItem="J99-vp-dB3" firstAttribute="centerY" secondItem="Vvx-cO-3Br" secondAttribute="centerY" id="NXc-ce-fjw"/>
+                                    <constraint firstAttribute="trailing" secondItem="J99-vp-dB3" secondAttribute="trailing" constant="20" id="bSy-Ag-QKx"/>
+                                    <constraint firstItem="tP3-nq-2jQ" firstAttribute="top" secondItem="Vvx-cO-3Br" secondAttribute="top" constant="5" id="yD4-s7-g8G"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lj2-TO-bVP">
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="0.0" id="5Ak-J2-8Ct">
+                                    <size key="itemSize" width="371" height="144"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BigLevel" id="SL5-dc-4jV" customClass="BigLevelCollectionViewCell" customModule="scrum_ios" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="5" width="371" height="144"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="371" height="144"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Thj-ma-1Cm" id="hiR-nW-yhW"/>
+                                    <outlet property="delegate" destination="Thj-ma-1Cm" id="mZa-GQ-Bmw"/>
+                                </connections>
+                            </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VKW-TO-dXa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VKW-TO-dXa" firstAttribute="leading" secondItem="EF5-ar-pIY" secondAttribute="leading" id="0oa-97-gPD"/>
+                            <constraint firstAttribute="trailing" secondItem="VKW-TO-dXa" secondAttribute="trailing" id="2cm-sw-H8n"/>
+                            <constraint firstItem="lj2-TO-bVP" firstAttribute="leading" secondItem="EF5-ar-pIY" secondAttribute="leading" id="32z-MP-zXF"/>
+                            <constraint firstItem="1xF-QA-dbh" firstAttribute="top" secondItem="lj2-TO-bVP" secondAttribute="bottom" id="FLm-fA-L8x"/>
+                            <constraint firstAttribute="trailing" secondItem="Vvx-cO-3Br" secondAttribute="trailing" id="FRp-2Q-b4Y"/>
+                            <constraint firstItem="VKW-TO-dXa" firstAttribute="top" secondItem="EF5-ar-pIY" secondAttribute="top" id="GFt-cR-G3G"/>
+                            <constraint firstItem="lj2-TO-bVP" firstAttribute="top" secondItem="Vvx-cO-3Br" secondAttribute="bottom" id="ImU-O8-yH6"/>
+                            <constraint firstAttribute="trailing" secondItem="lj2-TO-bVP" secondAttribute="trailing" id="Mlh-sE-4Jo"/>
+                            <constraint firstItem="Vvx-cO-3Br" firstAttribute="top" secondItem="VKW-TO-dXa" secondAttribute="bottom" id="OVg-Lx-Hq3"/>
+                            <constraint firstItem="Vvx-cO-3Br" firstAttribute="top" secondItem="BOL-Gt-OlC" secondAttribute="bottom" id="eTu-hW-bsm"/>
+                            <constraint firstItem="Vvx-cO-3Br" firstAttribute="leading" secondItem="EF5-ar-pIY" secondAttribute="leading" id="xNT-R4-XSQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="lj2-TO-bVP" id="4hQ-gu-g1h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P5s-ga-RA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="minilogo" width="1302" height="275"/>
+    </resources>
+</document>

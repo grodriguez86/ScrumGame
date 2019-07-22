@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Sub Level View Controller-->
+        <scene sceneID="OdZ-2s-v3P">
+            <objects>
+                <viewController storyboardIdentifier="SubLevelViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ky8-KI-yj7" customClass="SubLevelViewController" customModule="scrum_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aja-3e-Bty"/>
+                        <viewControllerLayoutGuide type="bottom" id="zBk-IY-VIP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6YK-Jx-ovo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿SCRUM?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkk-5Q-uKi">
+                                <rect key="frame" x="102.5" y="80" width="170.5" height="43"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mPS-wR-T2k">
+                                <rect key="frame" x="0.0" y="219" width="375" height="378"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="20" id="yfp-hL-pfK">
+                                    <size key="itemSize" width="230" height="291"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SubLevelCell" id="A1O-zP-I4c" customClass="SubLevelCollectionViewCell" customModule="scrum_ios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="43.5" width="230" height="291"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="230" height="291"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ky8-KI-yj7" id="R05-WM-e6j"/>
+                                    <outlet property="delegate" destination="ky8-KI-yj7" id="x5K-aZ-jfq"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 subnivel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JO2-A0-EO5">
+                                <rect key="frame" x="136.5" y="133" width="102.5" height="26"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKb-BT-F6I">
+                                <rect key="frame" x="10" y="25" width="30" height="43"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="25"/>
+                                <state key="normal" title="X"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="ky8-KI-yj7" eventType="touchUpInside" id="TS8-Gk-e52"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.65052652792912458" blue="0.10306372035907629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mPS-wR-T2k" secondAttribute="trailing" id="52e-wM-26O"/>
+                            <constraint firstItem="mPS-wR-T2k" firstAttribute="leading" secondItem="6YK-Jx-ovo" secondAttribute="leading" id="5uh-of-zCt"/>
+                            <constraint firstItem="JO2-A0-EO5" firstAttribute="top" secondItem="bkk-5Q-uKi" secondAttribute="bottom" constant="10" id="A0R-Md-vd7"/>
+                            <constraint firstItem="zBk-IY-VIP" firstAttribute="top" secondItem="mPS-wR-T2k" secondAttribute="bottom" constant="70" id="AZ8-tz-MYf"/>
+                            <constraint firstItem="JO2-A0-EO5" firstAttribute="centerX" secondItem="6YK-Jx-ovo" secondAttribute="centerX" id="Be0-U3-b4P"/>
+                            <constraint firstItem="mPS-wR-T2k" firstAttribute="top" secondItem="JO2-A0-EO5" secondAttribute="bottom" constant="60" id="Lm0-t9-6VX"/>
+                            <constraint firstItem="bkk-5Q-uKi" firstAttribute="centerX" secondItem="6YK-Jx-ovo" secondAttribute="centerX" id="Nqm-9w-G0f"/>
+                            <constraint firstItem="yKb-BT-F6I" firstAttribute="top" secondItem="aja-3e-Bty" secondAttribute="bottom" constant="5" id="Tvd-w1-m9q"/>
+                            <constraint firstItem="bkk-5Q-uKi" firstAttribute="top" secondItem="6YK-Jx-ovo" secondAttribute="top" constant="80" id="kb1-TP-qKx"/>
+                            <constraint firstItem="yKb-BT-F6I" firstAttribute="leading" secondItem="6YK-Jx-ovo" secondAttribute="leading" constant="10" id="nTs-wy-9xM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="mPS-wR-T2k" id="LwJ-z5-8hZ"/>
+                        <outlet property="levelTitle" destination="bkk-5Q-uKi" id="5fL-0i-hnY"/>
+                        <outlet property="subLevelsTitle" destination="JO2-A0-EO5" id="EUd-Fh-shX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xuS-ww-1iE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.80000000000001" y="-1.3493253373313345"/>
+        </scene>
+    </scenes>
+</document>

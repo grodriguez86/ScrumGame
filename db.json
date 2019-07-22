@@ -1,0 +1,170 @@
+{
+    "levels": [
+        {
+            "name": "Scrum?!!",
+            "code": 1,
+            "sublevels": [
+                {
+                    "name": "Introduccion",
+                    "code": "1.1",
+                    "info_theory": [
+                        {
+                            "code": "1.1.1",
+                            "content": [
+                                {
+                                    "type": "title",
+                                    "data": "Titulo"
+                                },
+                                {
+                                    "type": "image",
+                                    "data": "https://www.interbel.es/wp-content/uploads/2015/10/Simple-kanban-board-.jpg"
+                                },
+                                {
+                                    "type": "video",
+                                    "data": "jUz1ytcnn3c"
+                                },
+                                {
+                                    "type": "text",
+                                    "data": "Este es un parrafo. Puede utilizarse para describir alguna situacion mas compleja o algun texto explicativo. Puede tener el largo necesario."
+                                }
+                            ]
+                        },
+                        {
+                            "code": "1.1.2",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "data": "Esta es la segunda pagina del tutorial, y la ultima! Ahora la  flecha de avanzar se transforma en algo que lleve a jugar 😊"
+                                }
+                            ]
+                        }
+                    ],
+                    "info_games": [
+                        {
+                            "code": "1.1.1",
+                            "title": "¿Quien es el encargado de dar las ordenes en el equipo?",
+                            "type": "textQuiz",
+                            "content": [
+                                {
+                                    "type": "textAnswer",
+                                    "isCorrect": false,
+                                    "data": "Ambos"
+                                },
+                                {
+                                    "type": "textAnswer",
+                                    "isCorrect": false,
+                                    "data": "Ninguno"
+                                },
+                                {
+                                    "type": "textAnswer",
+                                    "isCorrect": false,
+                                    "data": "Scrum Master"
+                                },
+                                {
+                                    "type": "textAnswer",
+                                    "isCorrect": true,
+                                    "data": "Product Owner"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "1.1.2",
+                            "title": "¿Quien es el encargado de dar las ordenes en el equipo?",
+                            "type": "draggable"
+                        }
+                    ]
+                },
+                {
+                    "name": "Repaso de los conceptos generales",
+                    "code": "1.1",
+                    "info_theory": [
+                        {
+                            "code": "1.1.1",
+                            "content": [
+                                {
+                                    "type": "title",
+                                    "data": "Titulo"
+                                },
+                                {
+                                    "type": "image",
+                                    "data": "https://www.interbel.es/wp-content/uploads/2015/10/Simple-kanban-board-.jpg"
+                                },
+                                {
+                                    "type": "video",
+                                    "data": "jUz1ytcnn3c"
+                                },
+                                {
+                                    "type": "text",
+                                    "data": "Este es un parrafo. Puede utilizarse para describir alguna situacion mas compleja o algun texto explicativo. Puede tener el largo necesario."
+                                }
+                            ]
+                        },
+                        {
+                            "code": "1.1.2",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "data": "Esta es la segunda pagina del tutorial, y la ultima! Ahora la  flecha de avanzar se transforma en algo que lleve a jugar 😊"
+                                }
+                            ]
+                        }
+                    ],
+                    "info_games": [
+                        {
+                            "code": "1.1.1",
+                            "title": "¿Quien es el encargado de dar las ordenes en el equipo?",
+                            "type": "textQuiz",
+                            "content": [
+                                {
+                                    "type": "textAnswer",
+                                    "isCorrect": false,
+                                    "data": "Ambos"
+                                },
+                                {
+                                    "type": "textAnswer",
+                                    "isCorrect": false,
+                                    "data": "Ninguno"
+                                },
+                                {
+                                    "type": "textAnswer",
+                                    "isCorrect": false,
+                                    "data": "Scrum Master"
+                                },
+                                {
+                                    "type": "textAnswer",
+                                    "isCorrect": true,
+                                    "data": "Product Owner"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "1.1.2",
+                            "title": "¿Quien es el encargado de dar las ordenes en el equipo?",
+                            "type": "draggable"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Roles",
+            "code": 2,
+            "sublevels": []
+        },
+        {
+            "name": "Meetings",
+            "code": 3,
+            "sublevels": []
+        },
+        {
+            "name": "Graficos",
+            "code": 4,
+            "sublevels": []
+        },
+        {
+            "name": "Cosas de Scrum",
+            "code": 5,
+            "sublevels": []
+        }
+    ]
+}
